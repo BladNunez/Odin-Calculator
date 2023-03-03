@@ -30,6 +30,22 @@ function multiply(numOne,numTwo){
 }
 
 
+//Operate function takes in operator and 2 numbers and performs operation
+function operate(sign,numOne,numTwo){
+        if(sign === '+'){
+              return add(numOne,numTwo);
+        } else if(sign === '-'){
+                return sub(numOne,numTwo);
+        } else if(sign === '*'){
+                return multiply(numOne,numTwo);
+        } else if(sign === '/'){
+                return divide(numOne,numTwo);
+        } else{
+                console.log("Can not perform operation!");
+        }
+}
+
+
 
 
 
