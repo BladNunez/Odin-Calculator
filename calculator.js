@@ -47,5 +47,14 @@ function operate(sign,numOne,numTwo){
 
 
 
+//add eventlisteners on all number buttons
+let display = document.getElementsByClassName("display");
 
+const buttons = document.querySelectorAll("button")
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+       console.log("Worked");
 
+    
+  });
+  });
