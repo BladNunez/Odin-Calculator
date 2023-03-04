@@ -56,37 +56,8 @@ buttons.forEach(button => {
   button.addEventListener("click", () => {
         let b = button.value;
 
-        switch(b){
-                case '7':
-                        display.append(7);
-                        break;
-                case '8':
-                        display.append(8);
-                        break;
-                case '9':
-                         display.append(9);
-                         break;
-                 case '4':
-                        display.append(4);
-                        break;
-                case '5':
-                        display.append(5);
-                        break;
-                case '6':
-                        display.append(6);
-                        break;
-                case '1':
-                        display.append(1);
-                        break;
-                case '2':
-                        display.append(2);
-                        break;
-                case '3':
-                        display.append(3);
-                        break;
-                case '0':
-                        display.append(0);
-                        break;
-        }
+        display.append(b);
+
+
   });
   });
