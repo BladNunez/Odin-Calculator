@@ -62,8 +62,5 @@ buttons.forEach(button => {
                 display.innerHTML = " ";
         })
 
-
-
-
   });
   });
