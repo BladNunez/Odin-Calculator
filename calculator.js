@@ -49,14 +49,20 @@ function operate(sign,numOne,numTwo){
 
 //add eventlisteners on all number buttons
 let display = document.querySelector('.display');
-
+let clearButton = document.querySelector('#clear');
+let equalsButton = document.querySelector('#equals');
 
 const buttons = document.querySelectorAll("button")
 buttons.forEach(button => {
   button.addEventListener("click", () => {
         let b = button.value;
-
         display.append(b);
+
+        clearButton.addEventListener("click" , () => {
+                display.innerHTML = " ";
+        })
+
+
 
 
   });
